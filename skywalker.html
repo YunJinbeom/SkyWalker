@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>하늘걷기</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./ca.png">
+        <link rel="stylesheet" href="./sky.css">
+        <!--<style> body {background-color: #5383E8;} </style>-->
+    </head>
+    <body>
+        <style>
+            body {
+              background-image: url('skybackground2.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style>
+        <div style="text-align : center; margin-top: 50px; margin-top: 200px;">
+            <img src="./Title4.png" width="400px">
+        </div>
+        <div id="search" style="text-align : center; margin-top: 60px;">
+            <div id="bar">
+                <input type="text" id="id" class="foo" placeholder="ID" onkeydown="JavaScript:Enter_Check();">
+            </div> 
+        </div>
+    </body>
+</html>
+
+<script>
+    function Enter_Check() {
+        if (window.event.keyCode == 13) { // 엔터:13
+            var id = document.getElementById("id").value;
+            //alert(id);
+            var link = 'user.php?' + 'id=' + id;
+            //var link = "https://scarchive.kr/maker/userdataview.php?mapcode=BeGKyu9ZeRQLC1pz1tng3w==&starid=" + id;
+            //var link = 'usercharacter.html?id=df';
+            window.location.href = link;       //웹개발할때 숨쉬듯이 작성할 코드
+            //window.location.replace(link);     // 이전 페이지로 못돌아감
+            //window.open(link);
+        }
+    }
+</script>
+
+<!--https://scarchive.kr/maker/userdataview.php?mapcode=BeGKyu9ZeRQLC1pz1tng3w==&starid=ighook-->

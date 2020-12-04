@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type='text/javascript' src='jquery.js'></script>
+        <meta charset="utf-8">
+        <title>하늘걷기 캐릭터 검색</title>
+    </head>
+    <body>
+        <script>
+            let params = (new URL(document.location)).searchParams;
+            let id = params.get('id'); // is the string "Jonathan Smith".
+            //alert(id);
+            // https://scarchive.kr/maker/userdataview.php?mapcode=BeGKyu9ZeRQLC1pz1tng3w==&starid=ighook
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $.ajax({url:"https://scarchive.kr/maker/userdataview.php?mapcode=BeGKyu9ZeRQLC1pz1tng3w==&starid=ighook"}).done(function(data) {
+            });
+        </script>
+    </body>
+</html>

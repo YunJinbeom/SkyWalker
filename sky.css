@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.foo {
+    padding-left: 15px;
+    padding-right: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px;
+    outline: none;
+    color: #ABABAB;
+}
+
+#box{
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#slot {
+    width: 250px;
+    height: 400px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    font-family: FTLAB-HOONY TOON;
+}
+
+
+/*
+.slot {
+    width: 30px; 
+    height: 40px;
+    display: block;
+    float: left;
+    background-color: White;
+    opacity: 50%;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+}
